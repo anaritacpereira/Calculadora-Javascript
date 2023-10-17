@@ -1,0 +1,52 @@
+<!-- 
+    Autor: Ana Rita Pereira
+    Data: 17/10/2023
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <title> Calculadora </title>
+</head>
+<body>
+    <div class="grid"></div>
+        <section class="calc">
+
+            <input class="display" type="text" placeholder="0">
+
+            <button class="teclas" id="limpar" onclick="limpaInput()"> C </button>
+            <button class="teclas" onclick="apagar()"> DEL </button>
+            <button class="teclas" onclick="valor('%')"> % </button>
+            <button class="teclas" onclick="valor('/')"> &divide; </button>
+
+            <button class="teclas" value="7" onclick="valor(7)"> 7 </button>
+            <button class="teclas" value="8" onclick="valor(8)"> 8 </button>
+            <button class="teclas" value="9" onclick="valor(9)"> 9 </button>
+            <button class="teclas" onclick="valor('*')"> &times; </button>
+
+            <button class="teclas" value="4" onclick="valor(4)"> 4 </button>
+            <button class="teclas" value="5" onclick="valor(5)"> 5 </button>
+            <button class="teclas" value="6" onclick="valor(6)"> 6 </button>
+            <button class="teclas" onclick="valor('-')"> - </button>
+
+            <button class="teclas" value="1" onclick="valor(1)"> 1 </button>
+            <button class="teclas" value="2" onclick="valor(2)"> 2 </button>
+            <button class="teclas" value="3" onclick="valor(3)"> 3 </button>
+            <button class="teclas" onclick="valor('+')"> + </button>
+
+            <button class="teclas" onclick="valor('.')"> . </button>
+            <button class="teclas" onclick="valor(0)"> 0 </button>
+            <button class="teclas" id="igual" onclick="result()"> = </button>
+
+        </section>
+    </div>
+    <script src="funcoes.js"></script>
+</body>
+</html>
